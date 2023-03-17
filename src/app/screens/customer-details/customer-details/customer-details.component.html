@@ -1,0 +1,38 @@
+<div class="screen-container">
+    <h1 class = "screen-title">Personalise the Flight</h1>
+    <p class = "screen-sub-title">Please fill in the details and select the extras</p>
+    <div class="details-card">
+        <h3><strong>Passenger details</strong></h3>
+        <p><strong>Please note</strong>: The following information is required to issue a ticket, please ensure the name is identical to what is stated in the Passport or ID. Please note that the email information will not be used for Marketing purposes unless consented to.</p>
+        <div class="details-form">
+            <div class="details-form-left">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input matInput (keyup) = "setFirstName($event)" placeholder="As given in passport/ID">
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Passport Number</mat-label>
+                    <input matInput (keyup) = "setPassportNumber($event)">
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput (keyup) = "setEmail($event)">
+                </mat-form-field>
+            </div>
+            <div class="details-form-right">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Surname</mat-label>
+                    <input matInput (keyup) = "setLastName($event)" placeholder="As given in passport/ID">
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Phone Number</mat-label>
+                    <input matInput (keyup) = "setPhoneNumber($event)">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <div class="continue-button-container">
+        <button mat-flat-button class="flat-button" id="continue-button" (click)="createBooking()">CONTINUE</button>
+    </div>
+
+</div>

@@ -1,0 +1,40 @@
+.add-button-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.screen-title{
+    font-weight: 900;
+}
+
+.screen-sub-title{
+    margin-top: -10px;
+    color: #e60707;
+}
+
+table {
+    margin-top: 10px;
+    width: 100%;
+}
+  
+.connecting-airports-icon{
+    margin-left: 5px;
+    color: #e60707;
+}
+
+.seat-cost-td{
+    color: #e60707;
+    font-weight: 600;
+}
+
+th{
+    width: 10%;
+}
+
+.icon-td{
+    text-align: center;
+}
+
+.data-row:hover{
+    filter: brightness(90%);
+}
